@@ -35,6 +35,14 @@ background-color: rgba(255, 144, 14, 0.1);
   border: none;
 
 }
+.copyright{
+  margin: 25px;
+  padding: 30px;
+  text-align: center;
+  background:rgba(255, 244, 231, 1);
+  border-radius: 4px;
+  grid: 100%;
+}
 main{
   max-width: 1440px;
   margin: 0 auto;
@@ -118,6 +126,48 @@ Quick list of Our Features */
 #Quick-list{
   font-weight: 500;
 }
+/* features */
+#features-seaction-titel{
+ border-left: 5px solid #FF900E;
+ padding-left: 20px;
+}
+.features-card{
+  padding: 30px;
+  border-radius: 8px;
+box-shadow: 0 4px 30px 0 rgba(243, 209, 209, 1);
+margin-bottom: 20px;
+
+}
+
+.features-card .features-titel{
+font-weight: 600;
+font-size: 1.25rem;
+margin-top: 0px;
+margin-bottom: 0px;
+
+
+}
+.features{
+  gap: 140px;
+}
+#Experience-badg{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+
+
+}
+#Experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.features-img img{
+  width: 100%;
+
+
+}
 /* some facts rlt styles */
 .facts-container{
   display: grid;
@@ -164,10 +214,12 @@ Quick list of Our Features */
 .Sponspors-company img{
   filter: grayscale(100%);
 }
+
 /* responsiv media qurey */
 @media screen and (max-width: 576px) {
   .navbar, 
   .nav-link,
+  .features,
   .teams
   {
     flex-direction: column;
@@ -190,13 +242,17 @@ Quick list of Our Features */
   .our-features{
     margin: 20px;
   }
+  #Experience-badg{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 
 }
 
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams, .features{
     flex-direction: column;
 
   }
